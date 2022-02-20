@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Play Music</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="main">
+            <div class="main_items">
+                <div class="portada">
+                    <img src="https://de10.com.mx/sites/default/files/2018/04/27/beat_it_michael_jackson.jpg" alt="" id="img-portada">
+                </div>
+                
+                <div class="mux_title">
+                <span class="title">Beat It</span>
+                <span class="subtitle">Michael Jackson</span>
+                </div>
+            </div>
+            <div class="main_items">
+                <!-- <div class="linear"></div> -->
+                <progress id="progress" class="linear" value="0" max="100" ></progress>
+                <div class="conten_controler">
+                    <div class="controler_left" onclick="prevMusic();"><i class="fas fa-angle-left"></i></div>
+                    <div class="controler_play" onclick="togglePlay();"><i class="fas fa-play play"></i></div>  
+                    <div class="controler_right" onclick="nextMusic();"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<audio src="https://convert.ytdll.xyz/22-6-2021/oRdxUFDoQe0.mp3" id="audio"></audio>
+<!-- https://obedalvarado.pw/blog/crea-un-reproductor-de-musica-con-javascript-html5-y-css/ -->
+<!-- https://www.delftstack.com/es/howto/javascript/play-audio-javascript/ -->
+<!-- https://soundcloud.com/antony-12/130-reik-noviembre-sin-ti -->
+   <script src="main.js"></script>
+   <script src="data.js"></script>
+</body>
+</html>
+
